@@ -137,11 +137,11 @@ function App() {
             </motion.button>
           </motion.div>
           <motion.div 
-            className="bg-[#E8F4F9] rounded-3xl p-8 flex items-center justify-center"
+            className="bg-[#E8F4F9] rounded-3xl p-4 sm:p-8 flex items-center justify-center"
             variants={fadeIn}
           >
             <motion.img
-              src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600"
+              src="/images/croissant.jpg"
               alt="Fresh Croissant"
               className="w-full max-w-md rounded-2xl"
               whileHover={{ scale: 1.05 }}
@@ -168,19 +168,19 @@ function App() {
             {[
               {
                 name: 'Croissant',
-                image: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=300&h=300&fit=crop&crop=entropy'
+                image: '/images/croissant.jpg'
               },
               {
                 name: 'Fruit Tart',
-                image: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?w=300&h=300&fit=crop&crop=entropy'
+                image: '/images/fruit-tart.jpg'
               },
               {
                 name: 'Cinnamon Roll',
-                image: 'https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=300&h=300&fit=crop&crop=entropy'
+                image: '/images/cinnamon-roll.jpg'
               },
               {
                 name: 'Éclair',
-                image: 'https://images.unsplash.com/photo-1603532648955-039310d9ed75?w=300&h=300&fit=crop&crop=entropy'
+                image: '/images/eclair.jpg'
               }
             ].map((pastry, index) => (
               <motion.div 
@@ -206,23 +206,23 @@ function App() {
 
         {/* Newsletter Section */}
         <motion.div 
-          className="grid md:grid-cols-2 gap-8 mb-16"
+          className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-10 sm:mb-16"
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
           variants={staggerChildren}
         >
           <motion.div 
-            className="bg-[#E8F4F9] rounded-2xl p-8"
+            className="bg-[#E8F4F9] rounded-2xl p-5 sm:p-8 order-2 md:order-1"
             variants={fadeIn}
           >
-            <h2 className="text-3xl font-serif text-[#2B6B96] mb-4">
+            <h2 className="text-2xl sm:text-3xl font-serif text-[#2B6B96] mb-3 sm:mb-4">
               Sign up for our newsletter
             </h2>
-            <p className="text-gray-700 mb-6">
+            <p className="text-gray-700 mb-4 sm:mb-6">
               Get the latest updates on new arrivals, special offers, and more.
             </p>
-            <div className="flex gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <motion.input
                 type="email"
                 placeholder="Email address"
@@ -239,13 +239,13 @@ function App() {
             </div>
           </motion.div>
           <motion.div 
-            className="bg-[#E8F4F9] rounded-2xl p-8"
+            className="bg-[#E8F4F9] rounded-2xl p-5 sm:p-8 order-1 md:order-2"
             variants={fadeIn}
           >
-            <h2 className="text-3xl font-serif text-[#2B6B96] mb-4">
+            <h2 className="text-2xl sm:text-3xl font-serif text-[#2B6B96] mb-3 sm:mb-4">
               Online Orders
             </h2>
-            <p className="text-gray-700 mb-6">
+            <p className="text-gray-700 mb-4 sm:mb-6">
               Order your favorite pastries online for pickup or delivery.
             </p>
             <motion.button 

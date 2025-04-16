@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ArrowLeft, Minus, Plus, ShoppingCart } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -7,42 +7,42 @@ const pastries = [
     id: 1,
     name: 'Classic Croissant',
     price: 3.50,
-    image: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=300',
+    image: '/images/croissant.jpg',
     description: 'Buttery, flaky, and perfectly golden-brown'
   },
   {
     id: 2,
     name: 'Fruit Tart',
     price: 4.50,
-    image: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?w=300',
+    image: '/images/fruit-tart.jpg',
     description: 'Fresh seasonal fruits on vanilla custard'
   },
   {
     id: 3,
     name: 'Cinnamon Roll',
     price: 3.75,
-    image: 'https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=300',
+    image: '/images/cinnamon-roll.jpg',
     description: 'Soft, gooey, with perfect cinnamon swirls'
   },
   {
     id: 4,
     name: 'Chocolate Éclair',
     price: 4.00,
-    image: 'https://images.unsplash.com/photo-1603532648955-039310d9ed75?w=300',
+    image: '/images/eclair.jpg',
     description: 'Filled with rich chocolate cream'
   },
   {
     id: 5,
     name: 'Almond Croissant',
     price: 4.25,
-    image: 'https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=300',
+    image: '/images/almond-croissant.jpg',
     description: 'Flaky croissant filled with almond cream'
   },
   {
     id: 6,
     name: 'Berry Danish',
     price: 3.75,
-    image: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?w=300',
+    image: '/images/berry-danish.jpg',
     description: 'Mixed berries in a flaky Danish pastry'
   }
 ];
